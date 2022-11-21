@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>maktab_dl</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Maktabkhoone-DL</Title>
+        <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+        <!--        <PublishAoT>true</PublishAoT>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Downloader" Version="3.0.1" />
+        <PackageReference Include="HtmlAgilityPack" Version="1.11.46" />
+        <PackageReference Include="ShellProgressBar" Version="5.2.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="cookies.txt">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+</Project>
